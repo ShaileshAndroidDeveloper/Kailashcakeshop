@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.Seller.Seller_DashboardActivity"
+    tools:showIn="@layout/activity_seller__dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lout_sellcake"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/size_8dp"
+                app:cardCornerRadius="@dimen/size_8dp"
+                app:cardBackgroundColor="@color/Card1">
+
+
+                <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:text="Sell Cake"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_20dp"
+                    android:textStyle="bold"/>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lout_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/size_8dp"
+                app:cardCornerRadius="@dimen/size_8dp"
+                app:cardBackgroundColor="@color/Card2">
+
+                <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAllCaps="true"
+                    android:textAlignment="center"
+                    android:text="Check Order"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_20dp"
+                    android:textStyle="bold"/>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

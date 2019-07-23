@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Kailashcake</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_activity_cake">CakeActivity</string>
+    <string name="title_activity_cake_detail">CakeDetailActivity</string>
+    <string name="add_to_cart">ADD TO CART</string>
+    <string name="title_activity_cart">CartActivity</string>
+    <string name="title_activity_check_out">CheckOutActivity</string>
+    <string name="title_activity_seller__dashboard">Seller_DashboardActivity</string>
+    <string name="title_activity_seller__login">Seller_LoginActivity</string>
+    <string name="title_activity_seller__sell_cake">Seller_SellCakeActivity</string>
+    <string name="Done">Done</string>
+    <string name="Carat">Cake Type</string>
+    <string name="Back">Back</string>
+    <string name="birthday_cake">Birthday Cake</string>
+    <string name="engagement_cake">Engagement Cake</string>
+    <string name="photo_cake">Photo Cake</string>
+    <string name="marriage_cake">Marriage Cake</string>
+    <string name="anniversary_cake">Anniversary Cake</string>
+    <string name="function_cake">Function Cake</string>
+    <string name="RS">RS.</string>
+    <string name="TOKEN">FPpT5QU5Xyf7sGnWjGbQnvDKJEp7ogCe</string>
+    <string name="title_activity_my_order">MyOrderActivity</string>
+    <string name="title_activity_ordedetail">OrdedetailActivity</string>
+    <string name="Permission_Denied">Permission denied</string>
+    <string name="title_activity_seller__cakelist">Seller_CakelistActivity</string>
+    <string name="title_activity_offer">OfferActivity</string>
+</resources>

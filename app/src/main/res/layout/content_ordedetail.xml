@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.Users.OrdedetailActivity"
+    tools:showIn="@layout/activity_ordedetail">
+
+    <ScrollView
+        android:layout_above="@+id/lout_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="ORDER ID "
+            android:layout_weight="0.40"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:padding="@dimen/size_10dp"
+            android:textSize="14sp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary" />
+
+        <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+            android:id="@+id/tv_orderid"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="0.60"
+            android:textSize="14sp"
+            android:padding="@dimen/size_10dp"
+            android:textAlignment="center"
+            android:textColor="@color/green"/>
+
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="DELIVERY TIME"
+                android:layout_weight="0.40"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:padding="@dimen/size_10dp"
+                android:textSize="14sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:id="@+id/tv_deliverytime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="0.60"
+                android:textSize="14sp"
+                android:padding="@dimen/size_10dp"
+                android:textAlignment="center"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="DELIVERY TIME"
+                android:layout_weight="0.40"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:padding="@dimen/size_10dp"
+                android:textSize="14sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:id="@+id/tv_deliverydate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="0.60"
+                android:textSize="14sp"
+                android:padding="@dimen/size_10dp"
+                android:textAlignment="center"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="ORDER DATE TIME"
+                android:layout_weight="0.40"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:padding="@dimen/size_10dp"
+                android:textSize="14sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:id="@+id/tv_orderdatetime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="0.60"
+                android:textSize="14sp"
+                android:padding="@dimen/size_10dp"
+                android:textAlignment="center"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ORDER DETAILS"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:padding="@dimen/size_10dp"
+            android:textSize="14sp"
+            android:background="@color/white"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="CAKE NAME"
+                android:layout_weight="0.40"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:padding="@dimen/size_10dp"
+                android:textSize="14sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:id="@+id/tv_caketitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="0.60"
+                android:textSize="14sp"
+                android:padding="@dimen/size_10dp"
+                android:textAlignment="center"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="CAKE TYPE"
+                android:layout_weight="0.40"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:padding="@dimen/size_10dp"
+                android:textSize="14sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:id="@+id/tv_caketype"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="0.60"
+                android:textSize="14sp"
+                android:padding="@dimen/size_10dp"
+                android:textAlignment="center"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="CAKE FLAVOUR"
+                android:layout_weight="0.40"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:padding="@dimen/size_10dp"
+                android:textSize="14sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:id="@+id/tv_cakeflavour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="0.60"
+                android:textSize="14sp"
+                android:padding="@dimen/size_10dp"
+                android:textAlignment="center"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="CAKE MESSAGE"
+                android:layout_weight="0.40"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:padding="@dimen/size_10dp"
+                android:textSize="14sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:id="@+id/tv_cakemassage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="0.60"
+                android:textSize="14sp"
+                android:padding="@dimen/size_10dp"
+                android:textAlignment="center"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="CAKE RATE"
+                android:layout_weight="0.40"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:padding="@dimen/size_10dp"
+                android:textSize="14sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:id="@+id/tv_cakerate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="0.60"
+                android:textSize="14sp"
+                android:padding="@dimen/size_10dp"
+                android:textAlignment="center"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="QUANTITY"
+                android:layout_weight="0.40"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:padding="@dimen/size_10dp"
+                android:textSize="14sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:id="@+id/tv_quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="0.60"
+                android:textSize="14sp"
+                android:padding="@dimen/size_10dp"
+                android:textAlignment="center"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SUB TOTAL"
+                android:layout_weight="0.40"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:padding="@dimen/size_10dp"
+                android:textSize="14sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:id="@+id/tv_subtotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="0.60"
+                android:textSize="14sp"
+                android:padding="@dimen/size_10dp"
+                android:textAlignment="center"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SHIPPING DETAILS"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:padding="@dimen/size_10dp"
+            android:textSize="14sp"
+            android:background="@color/white"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="FIRST NAME "
+                android:layout_weight="0.40"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:padding="@dimen/size_10dp"
+                android:textSize="14sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:id="@+id/tv_firstname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="0.60"
+                android:textSize="14sp"
+                android:padding="@dimen/size_10dp"
+                android:textAlignment="center"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Last NAME "
+                android:layout_weight="0.40"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:padding="@dimen/size_10dp"
+                android:textSize="14sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:id="@+id/tv_lastname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="0.60"
+                android:textSize="14sp"
+                android:padding="@dimen/size_10dp"
+                android:textAlignment="center"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="ADDRESS"
+                android:layout_weight="0.40"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:padding="@dimen/size_10dp"
+                android:textSize="14sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:id="@+id/tv_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="0.60"
+                android:textSize="14sp"
+                android:padding="@dimen/size_10dp"
+                android:textAlignment="center"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="AREA"
+                android:layout_weight="0.40"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:padding="@dimen/size_10dp"
+                android:textSize="14sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:id="@+id/tv_area"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="0.60"
+                android:textSize="14sp"
+                android:padding="@dimen/size_10dp"
+                android:textAlignment="center"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="pincode"
+                android:layout_weight="0.40"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:padding="@dimen/size_10dp"
+                android:textSize="14sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:id="@+id/tv_pincode"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="0.60"
+                android:textSize="14sp"
+                android:padding="@dimen/size_10dp"
+                android:textAlignment="center"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="MOBILE"
+                android:layout_weight="0.40"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:padding="@dimen/size_10dp"
+                android:textSize="14sp"/>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary" />
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:id="@+id/tv_mobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_weight="0.60"
+                android:textSize="14sp"
+                android:padding="@dimen/size_10dp"
+                android:textAlignment="center"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/img_userphotocake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/lout_cancel"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <videoplayer.vishcoder.com.kailashcakeshop.util.font.ButtonBold
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_30dp"
+            android:background="@color/red"
+            android:text="CANCEL"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+</RelativeLayout>

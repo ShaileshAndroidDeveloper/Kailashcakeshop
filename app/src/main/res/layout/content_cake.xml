@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.Users.CakeActivity"
+    tools:showIn="@layout/activity_cake"
+    android:background="@color/white">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/white"
+      android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/bg_top_gradient_offer"
+          android:orientation="vertical">
+
+          <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewBoldRoboto
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="TODAY OFFERS"
+              android:textAlignment="center"
+              android:paddingTop="@dimen/size_5dp"
+              android:paddingBottom="@dimen/size_5dp"
+              android:textColor="@color/white"
+              android:textStyle="bold"
+              android:background="@color/colorPrimary_traparent"/>
+
+          <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewBoldRoboto
+              android:id="@+id/tv_offer"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="New Offer Coming Soon"
+              android:textAlignment="center"
+              android:paddingTop="@dimen/size_10dp"
+              android:paddingBottom="@dimen/size_10dp"
+              android:textColor="@color/white"/>
+
+      </LinearLayout>
+
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/rv_cake"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="@dimen/size_5dp">
+
+      </android.support.v7.widget.RecyclerView>
+
+  </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lout_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="No Cake Available"
+            android:textColor="@color/colorAccent"
+            android:gravity="center"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.Users.CheckOutActivity"
+    tools:showIn="@layout/activity_check_out"
+    android:background="@color/white"
+    android:id="@+id/lout_rmain">
+
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/Lout_Bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pink_border"
+        android:layout_margin="@dimen/size_8dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/size_10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_35dp"
+                android:textColor="@color/colorAccent"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:text="ShippingInformation (Recipient Details)"/>
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:theme="@style/CheckFormEditTextHint">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.EditTextMedium
+                android:id="@+id/edt_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:paddingBottom="@dimen/size_16dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/edit_text_cursor_black"
+                android:textSize="15sp"
+                android:theme="@style/CheckFormedtstyle" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:theme="@style/CheckFormEditTextHint">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.EditTextMedium
+                android:id="@+id/edt_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:paddingBottom="@dimen/size_16dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/edit_text_cursor_black"
+
+                android:textSize="15sp"
+                android:theme="@style/CheckFormedtstyle" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:theme="@style/CheckFormEditTextHint">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.EditTextMedium
+                android:id="@+id/edt_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Street Address"
+                android:paddingBottom="@dimen/size_16dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/edit_text_cursor_black"
+                android:textSize="15sp"
+                android:theme="@style/CheckFormedtstyle" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/lout_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:theme="@style/CheckFormEditTextHint">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.EditTextMedium
+                android:id="@+id/edt_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Area"
+                android:paddingBottom="@dimen/size_16dp"
+                android:singleLine="true"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/ic_dropdown"
+                android:textCursorDrawable="@drawable/edit_text_cursor_black"
+                android:textSize="15sp"
+                android:theme="@style/CheckFormedtstyle" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/lout_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:theme="@style/CheckFormEditTextHint">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.EditTextMedium
+                android:id="@+id/edt_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Pincode"
+                android:clickable="true"
+                android:paddingBottom="@dimen/size_16dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:editable="false"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:textCursorDrawable="@drawable/edit_text_cursor_black"
+                android:drawableRight="@drawable/ic_dropdown"
+                android:textSize="15sp"
+                android:theme="@style/CheckFormedtstyle" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+           android:id="@+id/lout_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:theme="@style/CheckFormEditTextHint">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.EditTextMedium
+                android:id="@+id/edt_deliverydate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Delivery Date"
+                android:paddingBottom="@dimen/size_16dp"
+                android:singleLine="true"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/ic_dropdown"
+                android:textCursorDrawable="@drawable/edit_text_cursor_black"
+                android:textSize="15sp"
+                android:theme="@style/CheckFormedtstyle" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/lout_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:theme="@style/CheckFormEditTextHint">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.EditTextMedium
+                android:id="@+id/edt_deliverytime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Delivery Time"
+                android:paddingBottom="@dimen/size_16dp"
+                android:singleLine="true"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:clickable="true"
+                android:textColor="@color/black"
+                android:drawableRight="@drawable/ic_dropdown"
+                android:textCursorDrawable="@drawable/edit_text_cursor_black"
+                android:textSize="15sp"
+                android:theme="@style/CheckFormedtstyle" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:theme="@style/CheckFormEditTextHint">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.EditTextMedium
+                android:id="@+id/edt_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:text="Surat"
+                android:paddingBottom="@dimen/size_16dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/edit_text_cursor_black"
+                android:editable="false"
+                android:textSize="15sp"
+                android:theme="@style/CheckFormedtstyle" />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:theme="@style/CheckFormEditTextHint">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.EditTextMedium
+                android:id="@+id/edt_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="State"
+                android:editable="false"
+                android:paddingBottom="@dimen/size_16dp"
+                android:singleLine="true"
+                android:text="Gujarat"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/edit_text_cursor_black"
+                android:textSize="15sp"
+                android:theme="@style/CheckFormedtstyle" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:theme="@style/CheckFormEditTextHint">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.EditTextMedium
+                android:id="@+id/edt_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Country"
+                android:paddingBottom="@dimen/size_16dp"
+                android:singleLine="true"
+                android:text="India"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/edit_text_cursor_black"
+                android:editable="false"
+                android:textSize="15sp"
+                android:theme="@style/CheckFormedtstyle" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:theme="@style/CheckFormEditTextHint">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.EditTextMedium
+                android:id="@+id/edt_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingBottom="@dimen/size_16dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/edit_text_cursor_black"
+                android:textSize="15sp"
+                android:theme="@style/CheckFormedtstyle" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Lout_Bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+       android:layout_marginLeft="@dimen/size_8dp"
+        android:layout_marginRight="@dimen/size_8dp"
+        android:layout_marginBottom="@dimen/size_8dp">
+
+    <videoplayer.vishcoder.com.kailashcakeshop.util.font.ButtonBold
+         android:id="@+id/btn_continue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_35dp"
+        android:background="@color/light_blue"
+        android:text="CONTINUE"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

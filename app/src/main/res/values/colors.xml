@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#977180</color>
+    <color name="colorPrimaryDark">#977180</color>
+    <color name="colorAccent">#977180</color>
+    <color name="colorPrimary_traparent">#a2863153</color>
+    <color name="edt_hint_color_gray">#969696</color>
+    <color name="edt_text_color_blue">#275299</color>
+    <color name="white">#ffffff</color>
+    <color name="ofwhite">#f5f2f2</color>
+    <color name="black">#000000</color>
+    <color name="login_text_color">#6a6a6a</color>
+    <color name="light_blue">#30c7b3</color>
+    <color name="gray">#20285299</color>
+    <color name="blue">#275299</color>
+    <color name="Dark_Pink">#e21987</color>
+    <color name="red">#C92633</color>
+    <color name="Dark_Red">#ac0411</color>
+    <color name="text_color">#6a6a6a</color>
+    <color name="statusbar_color" >#7d661031</color>
+    <color name="menu_background">#EDC9FF</color>
+    <color name="menu_text_selected">#AA00FF</color>
+    <color name="menu_text_no_selected">#dd000000</color>
+    <color name="pink_trans">#48cc1178</color>
+    <color name="orange_trans">#78c49e2d</color>
+    <color name="lightred_trans">#95e60000</color>
+    <color name="actionbar">#977180</color>
+    <color name="green">#03a742</color>
+    <color name="light_orange">#FE562B</color>
+    <color name="grey">#787878</color>
+    <color name="Card1">#FAB1A0</color>
+    <color name="Card2">#FDCB6E</color>
+    <color name="bottom_color">#abff142c</color>
+    <color name="dark_green">#243936</color>
+</resources>

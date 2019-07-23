@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_30dp"
+        android:layout_marginRight="@dimen/size_30dp"
+        android:background="@drawable/cardview"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/size_15dp"
+        android:paddingLeft="@dimen/size_10dp"
+        android:paddingRight="@dimen/size_10dp"
+        android:paddingTop="@dimen/size_15dp">
+
+        <ImageView
+            android:layout_width="@dimen/size_40dp"
+            android:layout_height="@dimen/size_40dp"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:src="@drawable/ic_verify_green" />
+
+        <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_16dp"
+            android:text="THANKS FOR ORDER"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_5dp"
+            android:text="You Order is Successfull. Arrived at Delivery Time ."
+            android:textAlignment="center" />
+
+
+
+
+        <videoplayer.vishcoder.com.kailashcakeshop.util.font.ButtonBold
+            android:id="@+id/btn_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_35dp"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:background="@drawable/button_orange"
+            android:text="OK"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

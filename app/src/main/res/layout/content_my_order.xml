@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.Users.MyOrderActivity"
+    tools:showIn="@layout/activity_my_order">
+
+    <LinearLayout
+        android:id="@+id/lout_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top_gradient_offer"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewBoldRoboto
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary_traparent"
+            android:paddingTop="@dimen/size_5dp"
+            android:paddingBottom="@dimen/size_5dp"
+            android:text="If You Want Cancel order ? Call On"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/lout_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/size_25dp"
+                android:layout_height="@dimen/size_30dp"
+                android:layout_marginRight="@dimen/size_5dp"
+                android:src="@drawable/ic_call"
+                android:tint="@color/white" />
+
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewBoldRoboto
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/size_10dp"
+                android:paddingBottom="@dimen/size_10dp"
+                android:text="+91 95120 91120"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_myorder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lout_call">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:id="@+id/lout_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No Order Found..."
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+</RelativeLayout>

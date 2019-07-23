@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.Users.RegisterActivity"
+    tools:showIn="@layout/activity_register"
+    android:id="@+id/lout_rmain">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        
+  
+    <LinearLayout
+        android:id="@+id/lout_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fitsSystemWindows="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_17dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:theme="@style/EditTextHint">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.EditTextMedium
+                android:id="@+id/edt_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:paddingBottom="@dimen/size_16dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@drawable/edit_text_cursor"
+                android:textSize="15sp"
+                android:theme="@style/edtstyle" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layout_edt_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_17dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:theme="@style/EditTextHint">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.EditTextMedium
+                android:id="@+id/edt_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:paddingBottom="@dimen/size_16dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@drawable/edit_text_cursor"
+                android:textSize="15sp"
+                android:theme="@style/edtstyle" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_17dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:theme="@style/EditTextHint">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.EditTextMedium
+                android:id="@+id/edt_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingBottom="@dimen/size_16dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@drawable/edit_text_cursor"
+                android:textSize="15sp"
+                android:theme="@style/edtstyle" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_17dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:theme="@style/EditTextHint">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.EditTextMedium
+                android:id="@+id/edt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:paddingBottom="@dimen/size_16dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@drawable/edit_text_cursor"
+                android:textSize="15sp"
+                android:theme="@style/edtstyle" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_17dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:theme="@style/EditTextHint"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/white">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.EditTextMedium
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingBottom="@dimen/size_16dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@drawable/edit_text_cursor"
+                android:textSize="15sp"
+                android:theme="@style/edtstyle"
+                app:passwordToggleEnabled="true" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_17dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:theme="@style/EditTextHint"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/white">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.EditTextMedium
+                android:id="@+id/edt_cpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:paddingBottom="@dimen/size_16dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@drawable/edit_text_cursor"
+                android:textSize="15sp"
+                android:theme="@style/edtstyle"
+                app:passwordToggleEnabled="true" />
+
+
+        </android.support.design.widget.TextInputLayout>
+
+        <videoplayer.vishcoder.com.kailashcakeshop.util.font.ButtonBold
+            android:id="@+id/btn_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_10dp"
+            android:layout_marginBottom="@dimen/size_5dp"
+            android:background="@drawable/round_button_pink"
+            android:paddingTop="@dimen/size_8dp"
+            android:paddingBottom="@dimen/size_8dp"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lout_register"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/size_30dp"
+        android:gravity="center">
+
+        <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have an account ? "
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewBold
+            android:id="@+id/tv_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+        
+    </LinearLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

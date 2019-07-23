@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="videoplayer.vishcoder.com.kailashcakeshop.activity.Seller.OfferActivity"
+    tools:showIn="@layout/activity_offer"
+    android:gravity="center"
+    android:background="@color/white"
+    android:id="@+id/lout_rmain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/size_8dp"
+        >
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_15dp"
+        android:theme="@style/CheckFormEditTextHint">
+
+        <videoplayer.vishcoder.com.kailashcakeshop.util.font.EditTextMedium
+            android:id="@+id/edt_offer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="OFFER"
+            android:paddingBottom="@dimen/size_16dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/edit_text_cursor_black"
+            android:textSize="15sp"
+            android:theme="@style/CheckFormedtstyle" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+        <videoplayer.vishcoder.com.kailashcakeshop.util.font.ButtonBold
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_35dp"
+            android:background="@color/light_blue"
+            android:text="UPDATE OFFER"
+            android:textSize="16sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

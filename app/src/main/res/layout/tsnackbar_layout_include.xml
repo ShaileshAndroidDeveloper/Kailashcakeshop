@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+        android:id="@+id/snackbar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|start"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/size_12dp"
+        android:paddingLeft="@dimen/design_snackbar_padding_horizontal"
+        android:paddingRight="@dimen/design_snackbar_padding_horizontal"
+        android:paddingTop="@dimen/size_12dp"
+        android:textAppearance="@style/TextAppearance.Design.Snackbar.Message"
+        android:textSize="@dimen/size_12dp"
+        tools:text="Text Goes HereText Goes HereText Goes HereText Goes HereText Goes HereText Goes HereText Goes HereText Goes HereText Goes HereText Goes HereText Goes HereText Goes HereText Goes HereText Goes Here" />
+    <!--
+        android:maxLines="@integer/design_snackbar_text_max_lines"
+        android:ellipsize="end"
+    -->
+
+    <Button
+        android:id="@+id/snackbar_action"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginLeft="@dimen/design_snackbar_extra_spacing_horizontal"
+        android:layout_marginStart="@dimen/design_snackbar_extra_spacing_horizontal"
+        android:paddingBottom="@dimen/design_snackbar_padding_vertical"
+        android:paddingLeft="@dimen/design_snackbar_padding_horizontal"
+        android:paddingRight="@dimen/design_snackbar_padding_horizontal"
+        android:paddingTop="@dimen/design_snackbar_padding_vertical"
+        android:textColor="?attr/colorAccent"
+        android:textSize="@dimen/size_15dp"
+        android:visibility="gone"
+        tools:text="Action"
+        tools:visibility="visible" />
+</merge>

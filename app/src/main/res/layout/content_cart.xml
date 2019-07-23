@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.Users.CartActivity"
+    tools:showIn="@layout/activity_cart"
+    android:background="@color/white">
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_above="@+id/Lout_Bottom"
+        android:id="@+id/rv_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/Lout_Bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_8dp"
+            android:background="@color/gray">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Final Amount"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_alignParentLeft="true"/>
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+               android:id="@+id/tv_finalamount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs.00.00"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_35dp"
+            android:weightSum="2">
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.ButtonBold
+               android:id="@+id/btn_continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:textColor="@color/white"
+                android:text="CONTINUE SHOPPING"
+                android:textSize="15sp"/>
+
+            <View
+                android:layout_width="@dimen/size_1dp"
+                android:layout_height="wrap_content"/>
+
+            <videoplayer.vishcoder.com.kailashcakeshop.util.font.ButtonBold
+                android:id="@+id/btn_buynow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/light_blue"
+                android:textColor="@color/white"
+                android:text="BUY NOW"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lout_nodata"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <videoplayer.vishcoder.com.kailashcakeshop.util.font.TextViewMedium
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:text="Your Cart is Empty..."/>
+    </RelativeLayout>
+
+</RelativeLayout>
